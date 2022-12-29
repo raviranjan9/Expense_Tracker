@@ -1,0 +1,80 @@
+.form-container {
+  position: relative;
+  top: 5rem;
+  max-width: 60rem;
+  margin: 4rem auto;
+  background-color: #621bcc;
+  padding: 3rem;
+  font-size: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.form-control input {
+  width: 100%;
+  padding: 0.8rem;
+  display: block;
+  margin: 0.8rem auto;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 0;
+  outline: none;
+}
+
+.form-control label {
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+button {
+  background-color: #1e2232;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  width: 100%;
+  font-size: 4rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+  text-align: center;
+  border: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-container {
+    max-width: 90%;
+    top: 6rem;
+    padding: 2rem;
+    margin-bottom: 10rem;
+  }
+  .form-control input {
+    width: 100%;
+  }
+  button {
+    width: 100%rem;
+  }
+  .form-control label,.form-control label,button{
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .form-container {
+    width: 100%;
+    top: 5rem;
+    padding: 1rem;
+    margin-bottom: 10rem;
+  }
+  .form-control input {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  .form-control label,.form-control label,button{
+    font-size: 2rem;
+  }
+}
