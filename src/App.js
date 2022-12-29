@@ -10,9 +10,10 @@ const getItems = () =>{
   if(items === []){
     return [];
   }
-  else{
+  else if(items !== null){
     return JSON.parse(items);
   }
+  return [];
 }
 
 const App = () => {
@@ -22,11 +23,9 @@ const App = () => {
     const updatedExpenseList = [enteredExpenseData, ...newExpenseList];
     setExpenseList(updatedExpenseList);
   }
-
   useEffect(()=>{
     localStorage.setItem('items', JSON.stringify(newExpenseList))
   },[newExpenseList]);
-
   return (
     <div className='app'>
       <Title/>
