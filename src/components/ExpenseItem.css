@@ -8,22 +8,20 @@
   border-radius: 1rem;
   position: relative;
   top: 3rem;
-  padding: 3rem;
+  padding: 2rem 1rem;
   max-width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 3rem;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(82, 82, 209, 0.25) 0px 50px 100px -20px, rgba(68, 40, 180, 0.3) 0px 30px 60px -30px;
-
 }
 
 .expense-item-date {
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
-  flex-basis: 20%;
   padding: 1rem;
   text-align: center;
   border-radius: 1rem;
@@ -31,10 +29,9 @@
 }
 
 .expense-item-title {
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   padding: 1rem;
-  flex-basis: 50%;
   text-align: center;
   border-radius: 1rem;
   background-color: #621bcc;
@@ -42,10 +39,9 @@
 }
 
 .expense-item-amount {
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
-  flex-basis: 20%;
-  text-align: left;
+  text-align: center;
   padding: 1rem;
   border-radius: 1rem;
   background-color: #621bcc;
@@ -60,6 +56,7 @@
   margin: .5rem;
   padding: 1rem;
   border-radius: 1rem;
+  text-align: center;
   background-color: #621bcc;
 }
 
@@ -67,6 +64,7 @@
   margin: .5rem;
   padding: 1rem;
   border-radius: 1rem;
+  text-align: center;
   background-color: #621bcc;
 }
 
@@ -74,6 +72,7 @@
   margin: .5rem;
   padding: 1rem;
   border-radius: 1rem;
+  text-align: center;
   background-color: #621bcc;
 }
 .material-symbols-outlined{
