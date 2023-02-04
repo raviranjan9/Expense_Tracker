@@ -19,12 +19,12 @@ const ExpenseItem = (props) => {
                 <div className='expense-item-amount'>Rs {props.amount}
                 </div>
                 <div className='icons'>
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined _icons" onClick={() => props.deleteExpense(props.idx)}>
                         delete
                     </span>
-                    <span class="material-symbols-outlined">
+                    {/* <span class="material-symbols-outlined" onClick={() => props.updateExpense(props.idx)}>
                         edit
-                    </span>
+                    </span> */}
                 </div>
             </div>
         </div>

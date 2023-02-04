@@ -79,9 +79,15 @@
   font-size: 5rem;
   color: red;
   margin-top: 2rem;
-  margin-right: 3rem;
   font-weight: bold;
+  transition: color .5s .3s;
+}
+/* ._icons{
+  margin-right: 10rem;
+} */
 
+.material-symbols-outlined:hover{
+  color: #621bcc;
 }
 @media only screen and (max-width: 768px) {
   .expense-item-container {

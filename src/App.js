@@ -17,18 +17,31 @@ const getItems = () =>{
 }
 
 const App = () => {
-  let i = 0;
   const[newExpenseList, setExpenseList] = useState(getItems());
+  const[tExpense, setTExpense] = useState(0);
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const updatedExpenseList = [enteredExpenseData, ...newExpenseList];
     setExpenseList(updatedExpenseList);
   }
+  
+  let totalExpense = 0;
   useEffect(()=>{
-    localStorage.setItem('items', JSON.stringify(newExpenseList))
-  },[newExpenseList]);
+    localStorage.setItem('items', JSON.stringify(newExpenseList));
+    let items = JSON.parse(localStorage.getItem('items'));
+      for(let i = 0; i < items.length; i++){
+        totalExpense += JSON.parse(items[i].amount);
+    }
+  setTExpense(totalExpense);
+  },[newExpenseList, tExpense]);
+
+  const deleteExpense = (id) => {
+    let items = JSON.parse(localStorage.getItem('items'));
+    setExpenseList(items.filter((item) => item.idx !== id));
+  }
   return (
     <div className='app'>
       <Title/>
+      <h2 style={{marginTop:"10rem", textAlign:"right", fontSize:"3rem", marginRight:"2rem"}}>Total Expense Rs {tExpense}</h2>
       <ExpenseForm
         onSaveExpenseData = {saveExpenseDataHandler}
       />
@@ -36,10 +49,11 @@ const App = () => {
         newExpenseList.map(
           (expense) => (
               <ExpenseItem
-              key = {i++}
+              idx = {expense.idx}
               date = {expense.date}
               title = {expense.title}
               amount = {expense.amount}
+              deleteExpense = {deleteExpense}
           />
         )
       )

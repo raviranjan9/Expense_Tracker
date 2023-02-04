@@ -1,8 +1,9 @@
 .form-container {
   position: relative;
-  top: 5rem;
+  top: 2rem;
   max-width: 60rem;
-  margin: 4rem auto;
+  margin: .5rem auto;
+  margin-bottom: 5rem;
   background-color: #621bcc;
   padding: 3rem;
   font-size: 3rem;
