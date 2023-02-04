@@ -41,7 +41,7 @@ const App = () => {
   return (
     <div className='app'>
       <Title/>
-      <h2 style={{marginTop:"10rem", textAlign:"right", fontSize:"3rem", marginRight:"2rem"}}>Total Expense Rs {tExpense}</h2>
+      {tExpense && <h2 style={{marginTop:"10rem", textAlign:"right", fontSize:"3rem", marginRight:"2rem"}}>Total Expense Rs {tExpense}</h2>}
       <ExpenseForm
         onSaveExpenseData = {saveExpenseDataHandler}
       />
