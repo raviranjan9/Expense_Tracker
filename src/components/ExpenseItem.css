@@ -36,6 +36,7 @@
   border-radius: 1rem;
   background-color: #621bcc;
   margin-bottom: 2.3rem;
+  overflow: hidden;
 }
 
 .expense-item-amount {
@@ -45,6 +46,7 @@
   padding: 1rem;
   border-radius: 1rem;
   background-color: #621bcc;
+  overflow: hidden;
 }
 
 .expense-item-date {
