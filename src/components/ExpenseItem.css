@@ -84,9 +84,9 @@
   font-weight: bold;
   transition: color .5s .3s;
 }
-/* ._icons{
+._icons{
   margin-right: 10rem;
-} */
+}
 
 .material-symbols-outlined:hover{
   color: #621bcc;
