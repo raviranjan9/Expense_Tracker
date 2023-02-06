@@ -34,7 +34,7 @@
   padding: 1rem;
   text-align: center;
   border-radius: 1rem;
-  background-color: #621bcc;
+  background-color: #6600ff;
   margin-bottom: 2.3rem;
   overflow: hidden;
 }
@@ -45,7 +45,7 @@
   text-align: center;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #621bcc;
+  background-color: #6600ff;
   overflow: hidden;
 }
 
@@ -59,7 +59,7 @@
   padding: 1rem;
   border-radius: 1rem;
   text-align: center;
-  background-color: #621bcc;
+  background-color: #6600ff;
 }
 
 .expense-item-date-month {
@@ -67,7 +67,7 @@
   padding: 1rem;
   border-radius: 1rem;
   text-align: center;
-  background-color: #621bcc;
+  background-color: #6600ff;
 }
 
 .expense-item-date-year {
@@ -75,7 +75,7 @@
   padding: 1rem;
   border-radius: 1rem;
   text-align: center;
-  background-color: #621bcc;
+  background-color: #6600ff;
 }
 .material-symbols-outlined{
   font-size: 5rem;
@@ -89,7 +89,7 @@
 }
 
 .material-symbols-outlined:hover{
-  color: #621bcc;
+  color: #6600ff;;
 }
 @media only screen and (max-width: 768px) {
   .expense-item-container {

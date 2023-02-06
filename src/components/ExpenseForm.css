@@ -4,7 +4,7 @@
   max-width: 60rem;
   margin: .5rem auto;
   margin-bottom: 7rem;
-  background-color: #621bcc;
+  background-color: #6600ff;
   padding: 3rem;
   font-size: 3rem;
   border-radius: 1rem;
@@ -31,7 +31,7 @@
 }
 
 button {
-  background-color: #1e2232;
+  background-color: #282828;
   color: white;
   font-weight: 600;
   letter-spacing: 0.3rem;

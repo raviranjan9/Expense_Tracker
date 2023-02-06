@@ -58,7 +58,7 @@ const App = () => {
   return (
     <div className='app'>
       <Title/>
-      {tExpense && <h2 style={{marginTop:"10rem", textAlign:"right", fontSize:"3rem", marginRight:"2rem"}}>Total Expense Rs {tExpense}</h2>}
+      {tExpense && <h2 style={{marginTop:"10rem", color:"282828", textAlign:"right", fontSize:"3rem", marginRight:"2rem"}}>Total Expense (Rs) <span style={{color:"red"}}>{tExpense}</span></h2>}
       <ExpenseForm
         title={title}
         amount={amount}
