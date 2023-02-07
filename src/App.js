@@ -36,7 +36,7 @@ const App = () => {
     setTitle(item[0].title);
     setAmount(item[0].amount);
     setDate(item[0].date);
-    deleteExpense(id);
+    setTimeout(deleteExpense(id), 10000);
   }
 
   useEffect(()=>{

@@ -84,13 +84,15 @@
   font-weight: bold;
   transition: color .5s .3s;
 }
+
 ._icons{
   margin-right: 10rem;
 }
 
 .material-symbols-outlined:hover{
-  color: #6600ff;;
+  color: #6600ff;
 }
+
 @media only screen and (max-width: 768px) {
   .expense-item-container {
     min-width: 30rem;
