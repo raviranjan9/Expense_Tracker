@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import ReactDOM from 'react-dom';
 import './App.css'
 import ExpenseItem from './components/ExpenseItem';
 import ExpenseForm from './components/ExpenseForm';
