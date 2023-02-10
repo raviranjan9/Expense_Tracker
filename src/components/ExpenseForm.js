@@ -58,12 +58,12 @@ const ExpenseForm = (props) => {
                     <div className='form-control'>
                             <label>Title</label>
                             <input type='text' value={props.title? props.title : enteredTitle} onChange={titleChangeHandler} onClick={titleChangeHandlerClick}/>
-                            <p id="title" style={{color: 'red'}}></p>
+                            <p id="title" style={{color: 'red', fontSize:'2rem'}}></p>
                         </div>
                         <div className='form-control'>
                             <label>Amount</label>
                             <input type='number' min='1' step='any' value={props.amount? props.amount : enteredAmount} onChange={amountChangeHandler} onClick={amountChangeHandlerClick}/>
-                            <p id="amount" style={{color: 'red'}}></p>
+                            <p id="amount" style={{color: 'red', fontSize:'2rem'}}></p>
                         </div>
                         <div className='form-control'>
                             <label>Date</label>
