@@ -8,12 +8,18 @@ const ExpenseForm = (props) => {
 
     const titleChangeHandler = (event) => {
         setEnteredTitle(event.target.value);
+        let elem = document.getElementById('title');
+        if(event.target.value.length > 30) elem.innerText = "Title must be less than 30 characters";
+        else elem.innerText = "";
     }
     const titleChangeHandlerClick = () =>{
         if(props.title) {setEnteredTitle(props.title);setEnteredAmount(props.amount); setEnteredDate(props.date); props.setTitle(); props.setAmount(); props.setDate();}
     }
     const amountChangeHandler = (event) => {
         setEnteredAmount(event.target.value);
+        let elem = document.getElementById('amount');
+        if(event.target.value > 99999999999999999) return elem.innerText = "Amount must be less than 99999999999999999";
+        else elem.innerText = "";
     }
     const amountChangeHandlerClick = () =>{
         if(props.title) {setEnteredAmount(props.amount); setEnteredTitle(props.title); setEnteredDate(props.date);  props.setTitle(); props.setAmount(); props.setDate();}
@@ -31,10 +37,9 @@ const ExpenseForm = (props) => {
         alert("Please fill all the details");
         return;
        }
-       else if(enteredAmount < 1){
-            alert("Minimum value is 1");
-            return;
-       }
+       else if(enteredTitle.length > 30) return;
+       else if(enteredAmount > 99999999999999999) return;
+
        const expenseData = {
         idx : new Date().getTime(),
         title : enteredTitle,
@@ -53,10 +58,12 @@ const ExpenseForm = (props) => {
                     <div className='form-control'>
                             <label>Title</label>
                             <input type='text' value={props.title? props.title : enteredTitle} onChange={titleChangeHandler} onClick={titleChangeHandlerClick}/>
+                            <p id="title" style={{color: 'red'}}></p>
                         </div>
                         <div className='form-control'>
                             <label>Amount</label>
                             <input type='number' min='1' step='any' value={props.amount? props.amount : enteredAmount} onChange={amountChangeHandler} onClick={amountChangeHandlerClick}/>
+                            <p id="amount" style={{color: 'red'}}></p>
                         </div>
                         <div className='form-control'>
                             <label>Date</label>
